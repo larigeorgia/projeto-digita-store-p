@@ -1,1 +1,1 @@
-# projeto-digita-store-p
+# projeto-digital-store

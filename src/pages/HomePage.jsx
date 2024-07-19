@@ -1,18 +1,20 @@
 import Layout from "../components/Layout"
 import Section from "../components/Section"
-let conteudoDaPrimeiraSection = "Coleções em Destaque"
+import Slide from "../components/Slide"
+import Img from "../components/Img"
+import ProductListing from "../components/ProductListing"
+import produtos from "../BD"
 
 const HomePage = () => {
   return (
     <Layout>
         <Slide />
-        <Section props={conteudoDaPrimeiraSection}>
-          <h1>Coleções em Destaque</h1>
-          <Img />
+        <Section title="Coleções em Destaque">
+          <Img img={produtos}>
+          </Img>
         </Section>
-        <Section>
-          <h1>Produtos em Alta</h1>
-          <ProductList props={3} />
+        <Section title="Produtos em alta">
+          <ProductListing />
         </Section>
     </Layout>
   )
@@ -20,4 +22,5 @@ const HomePage = () => {
 
 export default HomePage
 
-{/* <Section props={aquelalista}/> */}
+/* <Section props={aquelalista}/> */
+// valor={3}

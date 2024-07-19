@@ -9,12 +9,15 @@
 //   }
 // ]
 
-
-const Section = ({ children }) => {
+const Section = ({ children, title}) => {
   return (
-    <main>
+    <div>
+      <h1>{title}</h1>
+    <div class="flex flex-wrap">
       { children }
-    </main>
+    </div>
+    </div>
+    
     // <h1>{conteudos[0].nome}</h1>,
     // <div className="">Section</div>
   )
